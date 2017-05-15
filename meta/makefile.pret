@@ -5,6 +5,7 @@
 `Benchmark-Featureset-ParamCheck`
 	:test-requirement       [ :on "Test::Modern 0.013"^^:CpanId ];
 	:test-requirement       [ :on "Module::Runtime"^^:CpanId ];
+	:runtime-requirement    [ :on "perl 5.012"^^:CpanId ];
 	:runtime-requirement    [ :on "Data::Validator 1.07"^^:CpanId ];
 	:runtime-requirement    [ :on "IO::String"^^:CpanId ];
 	:runtime-requirement    [ :on "Moose 2.2002"^^:CpanId ];
