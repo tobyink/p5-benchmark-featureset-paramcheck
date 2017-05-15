@@ -65,7 +65,7 @@ my %trivial = %{ 'Benchmark::Featureset::ParamCheck'->trivial_test_data };
 my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_test_data };
 
 {
-	my $benchmark_runs = 50_000;
+	my $benchmark_runs = 10_000;
 	my %benchmark_data;
 
 	my %benchmark = map {
