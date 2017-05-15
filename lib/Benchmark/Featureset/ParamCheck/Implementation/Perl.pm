@@ -29,7 +29,7 @@ sub get_named_check {
 			&& $args{object}->can('print')
 			&& $args{object}->can('close');
 		
-		die 'bad hashes' unless 
+		die 'bad hashes' unless
 			ref($args{hashes}) eq 'ARRAY';
 		for my $arr (@{ $args{hashes} }) {
 			die 'bad hashes' unless ref($arr) eq 'HASH';
