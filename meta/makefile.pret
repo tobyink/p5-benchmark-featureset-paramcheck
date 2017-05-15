@@ -5,23 +5,22 @@
 `Benchmark-Featureset-ParamCheck`
 	:test-requirement       [ :on "Test::Modern 0.013"^^:CpanId ];
 	:test-requirement       [ :on "Module::Runtime"^^:CpanId ];
-	:runtime-requirement    [ :on "Data::Validator 1.07"^^CpanId ];
-	:runtime-requirement    [ :on "IO::String"^^CpanId ];
-	:runtime-requirement    [ :on "Moose 2.2002"^^CpanId ];
-	:runtime-requirement    [ :on "Moose::Util::TypeConstraints 2.2002"^^CpanId ];
-	:runtime-requirement    [ :on "MooseX::Params::Validate 0.21"^^CpanId ];
-	:runtime-requirement    [ :on "Mouse::Util::TypeConstraints"^^CpanId ];
-	:runtime-requirement    [ :on "Mouse v2.4.7"^^CpanId ];
-	:runtime-requirement    [ :on "namespace::autoclean"^^CpanId ];
-	:runtime-requirement    [ :on "Params::Check 0.38"^^CpanId ];
-	:runtime-requirement    [ :on "Params::ValidationCompiler 0.24"^^CpanId ];
-	:runtime-requirement    [ :on "Ref::Util 0.203"^^CpanId ];
-	:runtime-requirement    [ :on "Ref::Util::XS 0.116"^^CpanId ];
-	:runtime-requirement    [ :on "Specio::Declare 0.37"^^CpanId ];
-	:runtime-requirement    [ :on "Specio::Library::Builtins 0.37"^^CpanId ];
-	:runtime-requirement    [ :on "Type::Params 1.001_009"^^CpanId ];
-	:runtime-requirement    [ :on "Types::Standard 1.001_009"^^CpanId ];
-	:runtime-requirement    [ :on "Type::Tiny::XS 0.012"^^CpanId ];
-	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
-	.
+	:runtime-requirement    [ :on "Data::Validator 1.07"^^:CpanId ];
+	:runtime-requirement    [ :on "IO::String"^^:CpanId ];
+	:runtime-requirement    [ :on "Moose 2.2002"^^:CpanId ];
+	:runtime-requirement    [ :on "Moose::Util::TypeConstraints 2.2002"^^:CpanId ];
+	:runtime-requirement    [ :on "MooseX::Params::Validate 0.21"^^:CpanId ];
+	:runtime-requirement    [ :on "Mouse::Util::TypeConstraints"^^:CpanId ];
+	:runtime-requirement    [ :on "Mouse v2.4.7"^^:CpanId ];
+	:runtime-requirement    [ :on "namespace::autoclean"^^:CpanId ];
+	:runtime-requirement    [ :on "Params::Check 0.38"^^:CpanId ];
+	:runtime-requirement    [ :on "Params::ValidationCompiler 0.24"^^:CpanId ];
+	:runtime-requirement    [ :on "Ref::Util 0.203"^^:CpanId ];
+	:runtime-requirement    [ :on "Ref::Util::XS 0.116"^^:CpanId ];
+	:runtime-requirement    [ :on "Specio::Declare 0.37"^^:CpanId ];
+	:runtime-requirement    [ :on "Specio::Library::Builtins 0.37"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Params 1.001_009"^^:CpanId ];
+	:runtime-requirement    [ :on "Types::Standard 1.001_009"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Tiny::XS 0.012"^^:CpanId ];
+	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ].
 
