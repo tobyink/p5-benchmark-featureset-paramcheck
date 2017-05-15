@@ -75,9 +75,7 @@ my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_test_data };
 		};
 	} @cases;
 
-	local $TODO = $ENV{AUTHOR_TESTING}
-		? undef
-		: "this shouldn't prevent the test script from passing";
+	local $TODO = "this shouldn't prevent the test script from passing";
 	local $Test::Modern::VERBOSE = 1;
 
 	%benchmark_data = %trivial;
