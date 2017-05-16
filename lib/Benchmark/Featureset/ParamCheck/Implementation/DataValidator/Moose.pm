@@ -5,7 +5,7 @@ use warnings;
 package Benchmark::Featureset::ParamCheck::Implementation::DataValidator::Moose;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use parent qw(Benchmark::Featureset::ParamCheck::Base::DataValidator);
 use Moose 2.2002 ();
