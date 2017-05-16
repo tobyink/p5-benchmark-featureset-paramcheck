@@ -64,7 +64,8 @@ my @complex = @{ 'Benchmark::Featureset::ParamCheck'->complex_positional_data };
 	my $benchmark_runs = 10_000;
 	my @benchmark_data;
 
-	my %benchmark = map {
+	my %benchmark =
+		map {
 			my $pkg = $_;
 			$pkg->short_name => sub {
 				$pkg->run_positional_check($benchmark_runs, @benchmark_data);
