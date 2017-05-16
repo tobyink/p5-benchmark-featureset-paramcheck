@@ -39,4 +39,28 @@ sub get_named_check {
 	};
 }
 
+sub get_positional_check {
+	state $check = sub {
+		die 'wrong number of parameters' unless @_==3;
+		
+		die 'bad integer' unless
+			defined($_[0])
+			&& !is_ref($_[0])
+			&& $_[0] =~ /\A-?[0-9]+\z/;
+		
+		die 'bad object' unless
+			is_blessed_ref($_[2])
+			&& $_[2]->can('print')
+			&& $_[2]->can('close');
+		
+		die 'bad hashes' unless
+			is_plain_arrayref($_[1]);
+		for my $arr (@{ $_[1] }) {
+			die 'bad hashes' unless is_plain_hashref($arr);
+		}
+		
+		@_;
+	};
+}
+
 1;

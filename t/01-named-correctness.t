@@ -4,7 +4,7 @@
 
 =head1 PURPOSE
 
-Benchmark::Featureset::ParamCheck implementations work.
+Benchmark::Featureset::ParamCheck named implementations work.
 
 =head1 AUTHOR
 
@@ -26,11 +26,12 @@ use Module::Runtime qw(use_module);
 use Benchmark::Featureset::ParamCheck;
 
 my @cases   =    'Benchmark::Featureset::ParamCheck'->implementations;
-my %trivial = %{ 'Benchmark::Featureset::ParamCheck'->trivial_test_data };
-my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_test_data };
+my %trivial = %{ 'Benchmark::Featureset::ParamCheck'->trivial_named_data };
+my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_named_data };
 
 for my $pkg (@cases) {
 	use_module($pkg);
+	next unless $pkg->accept_hash || $pkg->accept_hashref;
 	subtest $pkg->long_name => sub {
 		
 		namespaces_clean($pkg);

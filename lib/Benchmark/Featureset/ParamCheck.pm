@@ -36,8 +36,14 @@ my %complex = (
 	object => $io,
 );
 
-sub trivial_test_data { \%trivial }
-sub complex_test_data { \%complex }
+sub trivial_named_data { \%trivial }
+sub complex_named_data { \%complex }
+
+my @trivial = map $trivial{$_}, qw(integer hashes object);
+my @complex = map $complex{$_}, qw(integer hashes object);
+
+sub trivial_positional_data { \@trivial }
+sub complex_positional_data { \@complex }
 
 1;
 
@@ -57,11 +63,11 @@ Benchmark::Featureset::ParamCheck - compare different parameter validation modul
   use Module::Runtime qw(use_module);
   
   my @impl     = Benchmark::Featureset::ParamCheck->implementations;
-  my $testdata = Benchmark::Featureset::ParamCheck->trivial_test_data;
+  my $testdata = Benchmark::Featureset::ParamCheck->trivial_named_data;
   
   for my $i (@impl) {
     # Check the data 10,000 times.
-    use_module($i)->run_check(10_000, $testdata);
+    use_module($i)->run_named_check(10_000, $testdata);
   }
 
 =head1 DESCRIPTION
@@ -75,21 +81,42 @@ an integer), 'hashes' (value should be an arrayref of hashrefs), and
 
 This is intended for benchmarking.
 
-=head2 Methods
+=head2 Class Methods
 
 =over
 
 =item * C<implementations>
 
-List of implementations.
+List of implementations. Each implementation is a subclass of
+Benchmark::Featureset::ParamCheck::Base
 
-=item * C<trivial_test_data>
+=item * C<trivial_named_data>, C<trivial_positional_data>
 
 Returns trivial test data.
 
-=item * C<complex_test_data>
+=item * C<complex_named_data>, C<complex_positional_data>
 
 Returns complex test data.
+
+=back
+
+=head2 Benchmark::Featureset::ParamCheck::Base
+
+This class provides the following class methods:
+
+=over
+
+=item * C<< accept_array >>
+
+=item * C<< accept_arrayref >>
+
+=item * C<< accept_hash >>
+
+=item * C<< accept_hashref >>
+
+=item * C<< run_named_check($times, %parameters) >>, C<< run_named_check($times, \%parameters) >>
+
+=item * C<< run_postional_check($times, @parameters) >>
 
 =back
 

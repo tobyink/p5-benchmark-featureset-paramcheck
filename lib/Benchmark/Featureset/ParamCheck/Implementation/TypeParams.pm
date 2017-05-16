@@ -10,7 +10,7 @@ our $VERSION   = '0.001';
 use parent qw(Benchmark::Featureset::ParamCheck::Base);
 use Ref::Util 0.203 ();
 use Ref::Util::XS 0.116 ();
-use Type::Params 1.001_009 qw(compile_named);
+use Type::Params 1.001_009 qw(compile_named compile);
 use Types::Standard 1.001_009 -types;
 use Type::Tiny::XS 0.012 ();
 use namespace::autoclean;
@@ -23,6 +23,14 @@ sub get_named_check {
 		integer   => Int,
 		hashes    => ArrayRef[HashRef],
 		object    => HasMethods[qw/ print close /],
+	);
+}
+
+sub get_positional_check {
+	state $check = compile(
+		Int,
+		ArrayRef[HashRef],
+		HasMethods[qw/ print close /],
 	);
 }
 

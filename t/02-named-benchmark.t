@@ -4,7 +4,7 @@
 
 =head1 PURPOSE
 
-Benchmark::Featureset::ParamCheck benchmarking.
+Benchmark::Featureset::ParamCheck benchmarking named parameters.
 
 =head1 SAMPLE RESULTS
 
@@ -61,8 +61,8 @@ use Benchmark::Featureset::ParamCheck;
 
 my @cases = map use_module($_),
 	'Benchmark::Featureset::ParamCheck'->implementations;
-my %trivial = %{ 'Benchmark::Featureset::ParamCheck'->trivial_test_data };
-my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_test_data };
+my %trivial = %{ 'Benchmark::Featureset::ParamCheck'->trivial_named_data };
+my %complex = %{ 'Benchmark::Featureset::ParamCheck'->complex_named_data };
 
 {
 	my $benchmark_runs = 10_000;

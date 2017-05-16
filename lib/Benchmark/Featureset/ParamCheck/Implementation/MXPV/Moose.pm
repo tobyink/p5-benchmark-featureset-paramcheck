@@ -25,4 +25,12 @@ sub get_named_check {
 	};
 }
 
+sub get_positional_check {
+	state $check = [
+		{ isa => $t->('Int') },
+		{ isa => $t->('ArrayRef[HashRef]') },
+		{ isa => duck_type(Printable => [qw/ print close /]) },
+	];
+}
+
 1;

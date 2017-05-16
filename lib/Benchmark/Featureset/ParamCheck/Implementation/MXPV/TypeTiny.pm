@@ -25,4 +25,12 @@ sub get_named_check {
 	};
 }
 
+sub get_positional_check {
+	state $check = [
+		{ isa => Int },
+		{ isa => ArrayRef[HashRef] },
+		{ isa => HasMethods[qw/ print close /] },
+	];
+}
+
 1;

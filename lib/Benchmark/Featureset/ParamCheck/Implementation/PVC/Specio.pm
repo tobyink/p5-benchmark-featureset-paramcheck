@@ -28,4 +28,14 @@ sub get_named_check {
 	);
 }
 
+sub get_positional_check {
+	state $check = validation_for(
+		params => [
+			{ type => t('Int') },
+			{ type => t('ArrayRef', of => t('HashRef')) },
+			{ type => object_can_type('Printable', methods => [qw/ print close /]) },
+		],
+	);
+}
+
 1;

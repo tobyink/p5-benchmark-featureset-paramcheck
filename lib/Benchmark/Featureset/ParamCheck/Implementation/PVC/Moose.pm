@@ -27,4 +27,14 @@ sub get_named_check {
 	);
 }
 
+sub get_positional_check {
+	state $check = validation_for(
+		params => [
+			{ type => $t->('Int') },
+			{ type => $t->('ArrayRef[HashRef]') },
+			{ type => duck_type(Printable => [qw/ print close /]) },
+		],
+	);
+}
+
 1;

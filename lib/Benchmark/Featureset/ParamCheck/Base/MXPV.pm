@@ -18,4 +18,11 @@ sub run_named_check {
 	return;
 }
 
+sub run_positional_check {
+	my ($class, $times, @args) = @_;
+	my $check = $class->get_positional_check;
+	pos_validated_list(\@args, @$check) for 1 .. $times;
+	return;
+}
+
 1;

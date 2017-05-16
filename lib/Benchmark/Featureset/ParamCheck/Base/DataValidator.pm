@@ -17,4 +17,19 @@ sub run_named_check {
 	return;
 }
 
+sub run_positional_check {
+	my ($class, $times, @args) = @_;
+	my $check = $class->get_positional_check;
+	$check->validate(@args) for 1 .. $times;
+	return;
+}
+
+sub get_positional_check {
+	state $check = do {
+		my $class = shift;
+		my $named = $class->get_named_check(@_);
+		bless({ rules => $named->rules }, 'Data::Validator')->with('StrictSequenced');
+	};
+}
+
 1;
