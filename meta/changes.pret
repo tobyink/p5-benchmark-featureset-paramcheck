@@ -4,7 +4,7 @@
 	issued  2017-05-15;
 	label   "Initial release".
 
-`Type-Tie 0.002 cpan:TOBYINK`
+`Benchmark-Featureset-ParamCheck 0.002 cpan:TOBYINK`
 	issued  2017-05-16;
 	changeset [
 		item "Support testing and benchmarking positional parameters."^^Addition;
