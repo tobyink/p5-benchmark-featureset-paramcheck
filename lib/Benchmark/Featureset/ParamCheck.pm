@@ -5,7 +5,7 @@ use warnings;
 package Benchmark::Featureset::ParamCheck;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 use IO::String ();
 
@@ -133,6 +133,7 @@ B<< Parameter validation libraries: >>
 L<Data::Validator>,
 L<MooseX::Params::Validate>,
 L<Params::Check>,
+L<Params::Validate>,
 L<Params::ValidationCompiler>,
 L<Ref::Util::XS>,
 L<Type::Params>.

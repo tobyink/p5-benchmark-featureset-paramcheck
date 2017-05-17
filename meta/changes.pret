@@ -9,3 +9,9 @@
 	changeset [
 		item "Support testing and benchmarking positional parameters."^^Addition;
 	].
+
+`Benchmark-Featureset-ParamCheck 0.003 cpan:TOBYINK`
+	issued  2017-05-17;
+	changeset [
+		item "Test Params::Validate."^^Addition;
+	].

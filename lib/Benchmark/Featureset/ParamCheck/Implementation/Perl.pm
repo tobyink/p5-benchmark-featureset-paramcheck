@@ -5,7 +5,7 @@ use warnings;
 package Benchmark::Featureset::ParamCheck::Implementation::Perl;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 use parent qw(Benchmark::Featureset::ParamCheck::Base);
 use Scalar::Util qw(blessed);
