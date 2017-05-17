@@ -15,6 +15,7 @@
 	:runtime-requirement    [ :on "Mouse v2.4.7"^^:CpanId ];
 	:runtime-requirement    [ :on "namespace::autoclean"^^:CpanId ];
 	:runtime-requirement    [ :on "Params::Check 0.38"^^:CpanId ];
+	:runtime-requirement    [ :on "Params::Validate 1.26"^^:CpanId ];
 	:runtime-requirement    [ :on "Params::ValidationCompiler 0.24"^^:CpanId ];
 	:runtime-requirement    [ :on "Ref::Util 0.203"^^:CpanId ];
 	:runtime-requirement    [ :on "Ref::Util::XS 0.116"^^:CpanId ];
