@@ -19,6 +19,8 @@ sub implementations {
 		Benchmark::Featureset::ParamCheck::Implementation::ParamsCheck::Perl
 		Benchmark::Featureset::ParamCheck::Implementation::ParamsCheck::TypeTiny
 		Benchmark::Featureset::ParamCheck::Implementation::Perl
+		Benchmark::Featureset::ParamCheck::Implementation::PV
+		Benchmark::Featureset::ParamCheck::Implementation::PV::TypeTiny
 		Benchmark::Featureset::ParamCheck::Implementation::PVC::Moose
 		Benchmark::Featureset::ParamCheck::Implementation::PVC::Specio
 		Benchmark::Featureset::ParamCheck::Implementation::PVC::TypeTiny
