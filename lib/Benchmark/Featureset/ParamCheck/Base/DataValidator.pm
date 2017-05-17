@@ -5,7 +5,7 @@ use warnings;
 package Benchmark::Featureset::ParamCheck::Base::DataValidator;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 use parent qw(Benchmark::Featureset::ParamCheck::Base);
 use Data::Validator 1.07;
