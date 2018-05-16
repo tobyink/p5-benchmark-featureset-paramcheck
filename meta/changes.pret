@@ -21,3 +21,12 @@
 	changeset [
 		item "Add explicit dependency on Params::Validate 1.26."^^Packaging;
 	].
+
+`Benchmark-Featureset-ParamCheck 0.005 cpan:TOBYINK`
+	issued  2018-05-16;
+	changeset [
+		item [
+			label "Fix name of Params::ValidationCompiler in output.";
+			dcs:fixes RT#123041;
+		];
+	].
