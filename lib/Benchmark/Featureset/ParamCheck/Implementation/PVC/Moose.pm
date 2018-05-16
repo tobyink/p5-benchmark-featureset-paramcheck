@@ -14,7 +14,7 @@ use namespace::autoclean;
 
 my $t = \&Moose::Util::TypeConstraints::find_or_parse_type_constraint;
 
-use constant long_name => 'Params::ValidateCompiler with Moose';
+use constant long_name => 'Params::ValidationCompiler with Moose';
 use constant short_name => 'PVC-Moose';
 
 sub get_named_check {

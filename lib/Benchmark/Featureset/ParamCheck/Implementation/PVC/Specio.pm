@@ -15,7 +15,7 @@ use Specio::Declare 0.37;
 use Specio::Library::Builtins 0.37;
 use namespace::autoclean;
 
-use constant long_name  => 'Params::ValidateCompiler with Specio';
+use constant long_name  => 'Params::ValidationCompiler with Specio';
 use constant short_name => 'PVC-Specio';
 
 sub get_named_check {

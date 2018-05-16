@@ -15,7 +15,7 @@ use Types::Standard 1.001_009 -types;
 use Type::Tiny::XS 0.012 ();
 use namespace::autoclean;
 
-use constant long_name => 'Params::ValidateCompiler with Type::Tiny';
+use constant long_name => 'Params::ValidationCompiler with Type::Tiny';
 use constant short_name => 'PVC-TT';
 
 sub get_named_check {
