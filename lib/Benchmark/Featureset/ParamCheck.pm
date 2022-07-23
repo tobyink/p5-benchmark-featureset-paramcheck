@@ -25,7 +25,11 @@ sub implementations {
 		Benchmark::Featureset::ParamCheck::Implementation::PVC::Specio
 		Benchmark::Featureset::ParamCheck::Implementation::PVC::TypeTiny
 		Benchmark::Featureset::ParamCheck::Implementation::RefUtilXS
-		Benchmark::Featureset::ParamCheck::Implementation::TypeParams
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::Moose
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::Mouse
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::Specio
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::TypeNano
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::TypeTiny
 	);
 }
 

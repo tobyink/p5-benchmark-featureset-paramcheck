@@ -2,7 +2,7 @@ use v5.12;
 use strict;
 use warnings;
 
-package Benchmark::Featureset::ParamCheck::Implementation::TypeParams;
+package Benchmark::Featureset::ParamCheck::Implementation::TypeParams::TypeTiny;
 
 our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.005';
@@ -10,12 +10,12 @@ our $VERSION   = '0.005';
 use parent qw(Benchmark::Featureset::ParamCheck::Base);
 use Ref::Util 0.203 ();
 use Ref::Util::XS 0.116 ();
-use Type::Params 1.001_009 qw(compile_named compile);
-use Types::Standard 1.001_009 -types;
+use Type::Params 1.016004 qw(compile_named compile);
+use Types::Standard 1.016004 -types;
 use Type::Tiny::XS 0.012 ();
 use namespace::autoclean;
 
-use constant long_name => 'Type::Params';
+use constant long_name => 'Type::Params with Type::Tiny';
 use constant short_name => 'TP-TT';
 
 sub get_named_check {

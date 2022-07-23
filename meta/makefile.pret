@@ -21,8 +21,9 @@
 	:runtime-requirement    [ :on "Ref::Util::XS 0.116"^^:CpanId ];
 	:runtime-requirement    [ :on "Specio::Declare 0.37"^^:CpanId ];
 	:runtime-requirement    [ :on "Specio::Library::Builtins 0.37"^^:CpanId ];
-	:runtime-requirement    [ :on "Type::Params 1.001_009"^^:CpanId ];
-	:runtime-requirement    [ :on "Types::Standard 1.001_009"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Params 1.016002"^^:CpanId ];
+	:runtime-requirement    [ :on "Types::Standard 1.016002"^^:CpanId ];
 	:runtime-requirement    [ :on "Type::Tiny::XS 0.012"^^:CpanId ];
+	:runtime-requirement    [ :on "Type::Nano"^^:CpanId ];
 	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ].
 
