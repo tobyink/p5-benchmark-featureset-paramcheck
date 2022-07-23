@@ -30,3 +30,11 @@
 			dcs:fixes RT#123041;
 		];
 	].
+
+`Benchmark-Featureset-ParamCheck 0.006 cpan:TOBYINK`
+	issued  2022-07-23;
+	changeset [
+		item [
+			label "Test Type::Params with non-Type::Tiny type constraints, including Specio, Moose, Mouse, and Type::Nano.";
+		];
+	].
