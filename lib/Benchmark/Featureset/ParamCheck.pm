@@ -30,6 +30,11 @@ sub implementations {
 		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::Specio
 		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::TypeNano
 		Benchmark::Featureset::ParamCheck::Implementation::TypeParams::TypeTiny
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams2::Moose
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams2::Mouse
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams2::Specio
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams2::TypeNano
+		Benchmark::Featureset::ParamCheck::Implementation::TypeParams2::TypeTiny
 	);
 }
 
@@ -139,7 +144,6 @@ L<MooseX::Params::Validate>,
 L<Params::Check>,
 L<Params::Validate>,
 L<Params::ValidationCompiler>,
-L<Ref::Util::XS>,
 L<Type::Params>.
 
 B<< Type constraint libraries: >>
@@ -148,6 +152,9 @@ L<Mouse>,
 L<Specio>,
 L<Type::Tiny>,
 L<Type::Nano>.
+
+B<< Other tested libraries: >>
+L<Ref::Util::XS>.
 
 =head1 AUTHOR
 
