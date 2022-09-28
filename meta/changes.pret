@@ -38,3 +38,14 @@
 			label "Test Type::Params with non-Type::Tiny type constraints, including Specio, Moose, Mouse, and Type::Nano.";
 		];
 	].
+
+`Benchmark-Featureset-ParamCheck 0.007 cpan:TOBYINK`
+	issued  2022-09-28;
+	changeset [
+		item [
+			label "Include Type::Params v2 API tests. These should basically benchmark the same as the v1 API as both use the same code under the hood. Good as an example of the syntax though.";
+		];
+		item [
+			label "Update benchmarking results in pod.";
+		];
+	].
